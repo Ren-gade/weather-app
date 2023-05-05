@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App Project</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <h1>Channel REN Weather</h1>
+    <h3 id="city-search">What city would you like to see weather for?</h3>
+
+    <form id="city-form">
+      <input type="city" id="city-input" placeholder="Enter your city" />
+      <input type="submit" value="search" />
+    </form>
+    <div id="temperature"><h2>18°C</h2></div>
+    <button id="celsius" onclick="displayTemperature('C')">C</button>
+    <button id="fahrenheit" onclick="displayTemperature('F')">F</button>
+    <script src="src/index.js"></script>
+  </body>
+</html>

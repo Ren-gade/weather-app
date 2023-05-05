@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+}
+
+#temperature {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#celsius {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  background: none;
+  color: blue;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 10px;
+}
