@@ -3,13 +3,13 @@ let apiKey = "85bbd3d16a2dfe0ecf253c7ae1e8fe03";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
 
 // show weather for user based on geolocation
-// function showLocaiton(location) {
-// let lat = (position.coords.latitude);
-// let long = (position.coords.longitude);
-// let geoLocationShow = `https://api.openweathermap.org/data/2.5/weather?q=lat=${lat}&lon=${long}&units=metric`
-// let geoAdvancedForecast = https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat)&lon=${long}&appid=${apiKey}&units=metric`
-// }
-//navigator.geolocation.getCurrentPosition(showLocation)
+function showLocation(location) {
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+  let geoLocationShow = `https://api.openweathermap.org/data/2.5/weather?q=lat=${lat}&lon=${long}&units=metric`;
+  let geoAdvancedForecast = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+}
+navigator.geolocation.getCurrentPosition(showLocation);
 // use api to call 16 day forecast based on geolocation
 // else
 // have input from user in form #city-input = city
